@@ -63,7 +63,7 @@ You can start a magnet transfers to download files to put.io.
 2. Click **Auto Downloads** button
 3. Click **Add Auto Download**
 4. Select a Download Location, allowed extensions, and min file size
-  - select 'Keep Folder Structure' if you want to keep the file paths the same
+    - select 'Keep Folder Structure' if you want to keep the file paths the same
 5. Hit the **Accept** button
 
 *Note: if you want to have the files auto deleted, **Settings > Downloads > Delete after download***
