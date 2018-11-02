@@ -231,13 +231,6 @@
     <None Include="assets\icons\Files-Zip-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PutioApiManager\PutioApiManager\PutioApi.csproj">
-      <Project>{688ef9d8-096f-4925-b3d1-6c18dc140804}</Project>
-      <Name>PutioApi</Name>
-      <Private>False</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="libs\Flurl.dll" />
     <EmbeddedResource Include="libs\Flurl.Http.dll" />
     <EmbeddedResource Include="libs\Newtonsoft.Json.dll" />
@@ -288,6 +281,12 @@
     <Content Include="assets\icons\putio.ico" />
     <EmbeddedResource Include="libs\CenterCommonDialog.dll" />
     <Content Include="putio.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PutioApi\PutioApi.csproj">
+      <Project>{688ef9d8-096f-4925-b3d1-6c18dc140804}</Project>
+      <Name>PutioApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

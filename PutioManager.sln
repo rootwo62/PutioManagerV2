@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PutioManager", "PutioManager\PutioManager.csproj", "{F042F099-F4E5-461B-99E3-AF5FA9D3A6E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PutioApi", "..\PutioApiManager\PutioApiManager\PutioApi.csproj", "{688EF9D8-096F-4925-B3D1-6C18DC140804}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PutioApi", "PutioApi\PutioApi.csproj", "{688EF9D8-096F-4925-B3D1-6C18DC140804}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CA25F5C4-5F11-4B5A-8EAE-5979B54E45E1}
+		SolutionGuid = {AAAED604-7559-4991-8E06-91669DA7E1E6}
 	EndGlobalSection
 EndGlobal
