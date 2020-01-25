@@ -19,6 +19,7 @@ namespace PutioManager.classes.helpers
 
         public string download_path;
         public bool downloaded;
+		public bool canceled;
         public Uri downloadlink;
         public DataGridViewRow rowinque;
         public TreeNode file;

@@ -231,9 +231,17 @@ namespace PutioManager.forms.main
 
         private void toolStripMenuItemCancelDownload_Click(object sender, EventArgs e)
         {
-            if (Downloads.dataGridViewDownloads.SelectedRows.Count >= 1)
-            (Downloads.dataGridViewDownloads.SelectedRows[0].Tag as PutioFile).webclient.CancelAsync();
-        }
+            if (Downloads.dataGridViewDownloads.SelectedRows.Count == 1)
+			(Downloads.dataGridViewDownloads.SelectedRows[0].Tag as PutioFile).webclient.CancelAsync();
+			else if
+			(Downloads.dataGridViewDownloads.SelectedRows.Count > 1) {
+				foreach (DataGridViewRow row in Downloads.dataGridViewDownloads.SelectedRows)
+				{
+					var pfile = row.Tag as PutioFile;
+					pfile.canceled = true;
+				}
+				}
+		}
 
         private void toolStripMenuItemRefreshTransfers_Click(object sender, EventArgs e)
         {
